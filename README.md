@@ -13,8 +13,8 @@ I created this site because I'm a Breaking Bad fan and it was a way to practice 
 
 * Grid Style Layout
 
-| ![Grid](./src/images/grid_01.jpg)  |
-|---|---|
+ ![Grid](./src/images/grid_01.jpg)  
+
 
 * Uses the Breaking Bad API
 * Responsive Design
