@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | Characters 🧪</title>
+    <script src="./assets/print.bundle.js"></script>
+</head>                        
+<body>
+    <nav class="navbar sticky-top">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <a class="navbar-brand ml-auto" href="all.html">All Characters</a>
+        <a class="navbar-brand" href="#">Search</a>
+    </nav>
+    <main class="content">
+        <div class="header_content">
+            <div class="header_txt-container">
+                <h1 class="display-1 header_heading">Character Search</h1>
+                <p class="lead header_txt">Search for your favorite Breaking Bad characters</p>
+                <form>
+                    <label for="characterSearchInput">Enter character name:</label>
+                    <input type="text" name="name" class="form-control" id="characterSearchInput" placeholder="e.g. Walter White" minlength="2" maxlength="50" required pattern="[A-Za-z ]{2,50}">
+                </form>
+                <div class="text-center loading">
+                    <div class="spinner-border text-light" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid character_container">
+            <div class="row">
+                <div class="col-lg">
+                    <div class="card all-char-card mb-3 d-none text-light" style="max-width: 800px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4 imgDetails">
+                            <img src="https://via.placeholder.com/700x1000" class="card-img" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body details">    
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container error">
+            <div class="alert alert-danger text-center" role="alert">
+                😞 Character not found! Have a look at the complete character list <a href="all.html">here</a>
+            </div>
+        </div>
+    </main>    
+    <script src="./assets/app.bundle.js"></script>
+    <script src="./assets/characters.bundle.js"></script>
+    <script src="./assets/ui.bundle.js"></script> 
+</body>
+</html>
