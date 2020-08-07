@@ -43,7 +43,7 @@ $ npm install
 Start the dev server
 
 ```sh
-$ cd breaking-bad-fan-site
+$ cd breaking-bad-front-end
 $ npm run serve
 ```
 
